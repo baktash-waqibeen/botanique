@@ -1,0 +1,643 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+#body-one
+{
+    margin: 0;
+    padding: 0;
+    background-color:  #151515;
+}
+/* -------------HEADER------------------ */
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 9vh;
+    background-color: #151515;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+  
+}
+
+.logo
+{
+    color: white;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.nav-links    
+{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+.nav-links a
+{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
+.nav-links li
+{
+    list-style: none;
+}
+
+.burger
+{
+    display: none;
+}
+
+
+.burger div
+{
+    width: 27px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+
+ @media screen  and (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+ }
+
+ @media screen  and (max-width:768px){
+     body {
+         overflow: hidden;
+     }
+
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #151515;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+    }
+    .nav-links li {
+        opacity: 0;
+        width: 30;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+ }
+ .burger + .line1 .line2 .line3
+ {
+     display: block;
+ }
+
+/* -------------MAIN------------------ */
+
+
+.head-image img
+{
+    margin: auto;
+    width: 100%;
+    height: 20em;
+    display: block;
+    margin-top: 2%;
+    opacity: 0.5;
+    position: relative;
+}
+
+
+.head-image .image-text p
+{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;   
+    font-family: 'Roboto', sans-serif;
+}
+
+.head-image .image-text h4
+{
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.head-image .image-text h5
+{
+    position: absolute;
+    top: 31%;
+    left: 46%;
+    transform: translate(-46%, -46%);
+    font-size: 40px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+.presentationMain
+{
+	display:flex;
+	width:80%;
+	margin:auto;
+	
+	padding-bottom:3rem;
+	border-bottom:1px solid;
+	border-image: linear-gradient(to right, transparent, white, transparent) 100% 1;
+}
+
+
+.presetationMain section
+{
+	display:flex;
+	flex-direction:row;
+	
+}
+
+.presentationMain img
+{
+	width:50%;
+	filter:grayscale(80%);
+	
+	box-shadow:
+	-3px -3px 0 #151515,
+	-3px 3px 0 #151515,
+	3px -3px 0 #151515,
+	3px 3px 0 #151515,
+	6px 6px 0 #fff,
+    7px 7px 0 #fff,
+    8px 8px 0 #fff,
+    9px 9px 0 #fff;
+	
+    margin:2%;
+    margin-top: 9%;
+}
+
+.presentationMain section
+{
+	color: white;
+	font-size:25px;
+	margin-top:16%;
+    text-align:justify;
+    font-family: 'Prata', serif;
+}
+
+.presentationMain section h1
+{
+	text-align:center;
+}
+
+
+.our-plants h6
+{
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    margin-top: 4%;
+    color: white;
+    margin: 0;
+} 
+
+.container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.container
+{
+    width:80em;
+}
+
+.container img
+{
+    width: 18vw;
+}
+
+
+.single-img-1
+{
+    
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.single-img-1:hover
+{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.1);
+}
+
+
+.single-img-2
+{
+    
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.single-img-2:hover
+{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.1);
+}
+
+
+.single-img-3
+{
+    
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.single-img-3:hover
+{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.1);
+}
+
+/* ----------------------PLANTS---------------------- */
+
+#body-three
+{
+    margin: 0;
+    padding: 0;
+    background-color: #e1b382;
+}
+
+
+.Plants-available-in-our-Store
+{
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    margin-top: 4%;
+    color: black;
+    margin-top: 1em;
+    font-weight: bolder;
+}
+
+
+.container1
+{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+    
+    
+}
+.img_row_1
+{
+    width: 22%;
+    filter: drop-shadow(30px 10px 4px #12343b);
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img_row_1:hover
+{
+    -webkit-transform: scale(1.3);
+    transform: scale(0.9);
+}
+
+
+/* ----------------------Vegetables---------------------- */
+.head-two-img
+{
+    margin: auto;
+    width: 100%;
+    height: 25em;
+    display: block;
+    margin-top: 2%;
+    opacity: 0.9;
+    position: relative;
+
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+}
+
+.container img
+{
+    width: 20%;
+    height: 10%;
+    box-shadow: 5px 5px rgb(125, 189, 52);
+}
+.container
+{
+    width: 70%;
+}
+
+.container-text
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-top: 2%;
+    max-width: 85%;
+    margin-left: 11%;
+    
+}
+
+.container-text-last
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-top: 2%;
+    max-width: 85%;
+    margin-left: 8%;
+}
+
+.container-text-last-one
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-top: 2%;
+    max-width: 85%;
+    margin-left: 8%;
+}
+
+/* ----------------------FLOWER---------------------- */
+
+#body-four
+{
+    margin: 0;
+    padding: 0;
+    background-color:  black;
+}
+
+.head-text
+{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#achievements{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    padding: 20px;
+    color: #FFFFFF;
+
+}
+
+.Achievements-1{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items:center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+.Achievements-1 img {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    min-height:0;
+    min-width:0;
+    max-height:450px;
+    max-width:610px;
+    margin:20px;
+    filter: grayscale(80%);
+    transition: transform .2s;
+}
+
+#achievements2{
+    flex-grow:3;
+}
+
+#achievements3{
+    flex-grow:2;
+}
+
+#achievements4{
+    flex-grow:3;
+}
+
+#achievements5{
+    flex-grow:3;
+}
+
+.Achievements-1 img:hover {
+    transform: scale(1.1); 
+    filter:none;
+}
+
+
+/* ----------------------SHRUBS---------------------- */
+
+
+
+
+.img_row_
+{
+    width: 22%;
+    -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    
+}
+
+
+.img_row_:hover
+{
+    -webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+/* ----------------------FOOTER---------------------- */
+
+
+#footerButton
+{
+	display:none;
+}
+
+#footerLabel div
+{
+	background:#444;
+	width:50px;
+	height:50px;
+	
+	border-radius:50%;
+	
+	display:flex;
+	
+	cursor:pointer;
+	margin:auto;
+	margin-top:185px;
+	
+	position:absolute;
+	left:49%;
+
+	transition:transform 1s ease;
+	
+	z-index:0;
+}
+
+#footerLabel span
+{
+	width:30px;
+	height:3px;
+	border-radius:3px;
+	background:#151515;
+	margin:auto;
+	position:relative;
+	bottom:5px;
+	
+	transition:transform 1.2s ease;
+}
+
+
+#footerLabel span:nth-child(1)
+{
+	transform:rotate(-50deg) translateX(8px);
+}
+
+#footerLabel span:nth-child(2)
+{
+	transform:rotate(50deg) translateX(-8px);
+}
+
+
+#curFooter
+{
+	background: #151515;;
+	height:150px;
+	
+	transition:visibility,transform 1s ease;
+	transform:translateY(13rem);
+	display:none;
+	flex-direction:column;
+	
+}
+
+#footerButton:checked~#curFooter
+{
+	transform:translateY(5.3rem);
+	display:flex;
+}
+
+#footerButton:checked~#footerLabel div
+{
+	transform:translateY(-8rem);
+	z-index:1;
+}
+
+
+
+#footerButton:checked~#footerLabel span:nth-child(1)
+{
+	transform:rotate(50deg) translateX(7px);
+}
+
+
+#footerButton:checked~#footerLabel span:nth-child(2)
+{
+	transform:rotate(-50deg)translateX(-7px);
+}
+
+#curFooter nav
+{
+	width:80%;
+	height:50px;
+	margin:auto;
+	display:flex;
+	justify-content:space-around;
+	
+	position:relative;
+	top:20px;
+	
+	font-size:2.5em;
+	font-family:"Seaweed";
+}
+
+#curFooter nav a
+{
+	color:#efdab9;
+	text-decoration:none;
+	
+}
+
+#curFooter nav a:hover
+{
+	text-decoration:underline;
+}
+
+#curFooter nav img
+{
+	width:50px;
+	position:relative;
+	bottom:10px;
+}
+
+
+
+
+
+
+
+
